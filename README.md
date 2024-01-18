@@ -2,7 +2,7 @@
 
 ![Interface screenshot of supermarket inventory management system](doc/mockup/mockup.jpg)
 
-This Python script offers a comprehensive solution for managing supermarket inventory. Utilizing the `openpyxl` library for Excel operations and `colorama` for enhanced terminal output, this script enables users to perform a variety of inventory management tasks. Key features include adding, updating, deleting items, searching items by name or category, and providing low stock alerts and expiration date warnings.
+This Python script offers a comprehensive solution for managing supermarket inventory. Utilizing the Google API for data handling and colorama for enhanced terminal output, this script enables users to perform a variety of inventory management tasks. Key features include adding, updating, deleting items, searching items by name or category, and providing low stock alerts and expiration date warnings.
 
 ## Features
 
@@ -37,19 +37,9 @@ In several functions, users have the flexibility to exit the process at any time
 - **Search by Category**: Find items based on their category. Type 'cancel' to exit the search.
 ![Category search interface in inventory system](doc/features/06-search-category.jpg)
 
-## Authentication
-
-For trial purposes, you can log in using the username `user1` and the password `password1`. The script uses a simple authentication system with predefined usernames and passwords. Update the `authenticate_user` function to modify or extend the authentication logic.
-
-![Login screen with username and password fields](doc/aut/username-password.jpg)
-![Screen displaying successful login message](doc/aut/aut-successful.jpg)
-![Screen showing login failure message](doc/aut/aut-failed.jpg)
-
-You will be prompted to authenticate before accessing the inventory management functionalities.
-
 ## Data Storage
 
-The inventory data is stored in an Excel file (`inventory.xlsx`). Ensure this file exists in the same directory as the script, or modify the `file_name` variable in the script to point to the correct file location.
+The inventory data is managed through the Google API, providing a robust and scalable solution for handling large datasets.
 
 ## Customization
 
